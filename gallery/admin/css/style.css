@@ -1,0 +1,99 @@
+/*!
+ * Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+/* Global Styles */
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	width: 100%;
+	height: 100%;
+	font-family: 'Open Sans', sans-serif;
+}	
+
+.navbar{
+	margin-bottom: 0;
+}
+
+.nav-top-right{
+	margin-right: 0;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.navbar-collapse{
+	padding-right: 0;
+}
+
+.navbar-collapse .nav-top-right li.inactive{
+	display: block;
+}
+
+@media(min-width:768px) {
+ 	.navbar-collapse .nav-top-right li.inactive{
+		display: none;
+	}
+
+}
+
+.sidebar{
+	position: absolute;
+	border-radius: 0;
+	border-top: none;
+	width: 250px;
+	height: 100%;
+}
+
+@media(max-width:768px) {
+	.sidebar{
+		display: none;
+	}
+
+}
+
+.sidebar-list{
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-list li{
+	position: relative;
+	display: block;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.sidebar-list li a{
+	display: block;
+	padding: 15px; 
+	text-decoration: none;
+}
+
+.float{
+	float: right;
+	color: #337ab7;
+}
+
+.sidebar-list li.active{
+	background-color:#eee;
+}
+
+/* Content Styling */
+.contents{
+	padding: 20px 0 20px 250px;
+}
+
+.contents .container{
+	width: auto;
+}
+
+@media(max-width:768px) {
+	.contents{
+		padding-left: 0;
+	}
+}
