@@ -65,7 +65,7 @@ $(function() {
     /* ----- Image Viewer Logic ----- */
 
     // Trigger for the selected image
-    $("a.img-click").on("click", function() {
+    $(document).on("click", "a.img-click", function() {
         console.log("in img click");
         var img_src = $(this).children().attr("src");
         total = $("#" + panelToShow + " a.img-click").length;
