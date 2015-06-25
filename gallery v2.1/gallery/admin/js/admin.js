@@ -30,10 +30,6 @@ $(function() {
     $('.gallery .category.options .col-xs-4 button.select').on('click', function() { 
         $(this).addClass('hidden');
         $('.gallery .category.options .col-xs-4 button.cancel').removeClass('hidden');
-        // $('.gallery .float.selected').removeClass('hidden');
-        // $('.gallery .rfloat.uploads').addClass('hidden');
-        // $('.gallery .rfloat.set').removeClass('hidden');
-        // $('.gallery .rfloat.delete').removeClass('hidden');
         $('.gallery .category.add-on').removeClass('hidden');
         $('.gallery .thumbnails img').addClass('edit');
         $('.gallery .thumbnails a.img-click').attr('data-toggle', '');
@@ -66,10 +62,6 @@ $(function() {
         selected_img = 0;
         $(this).addClass('hidden');
         $('.gallery .category.options .col-xs-4 button.select').removeClass('hidden');
-        // $('.gallery .float.selected').addClass('hidden');
-        // $('.gallery .rfloat.uploads').removeClass('hidden');
-        // $('.gallery .rfloat.set').addClass('hidden');
-        // $('.gallery .rfloat.delete').addClass('hidden');
         $('.gallery .category.add-on').addClass('hidden');
         $('.gallery .thumbnails img').removeClass('edit');
         $('.gallery .thumbnails a.img-click').attr('data-toggle', 'modal');
@@ -77,11 +69,10 @@ $(function() {
         $('.gallery .thumbnails a.img-click').removeClass('edit');
         $('.gallery .add-on .col-xs-4 button.set').attr('disabled', true);
         $('.gallery .add-on .col-xs-4 button.delete').attr('disabled', true);
+        $('.gallery .thumbnails a.img-click span.tickbox').addClass('hidden'); 
         $('.gallery .add-on .selected span.number').text(selected_img);
     }); 
-
-    // Enable the button if there is at least 1 IMAGE is clicked
-    // $('.gallery .rfloat.set button').attr('disabled', false);
+    
 });
 
 // Event handler for Gallery section

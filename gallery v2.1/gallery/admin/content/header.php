@@ -85,37 +85,32 @@
         <ul class="sidebar-list">
             <li>
                 <a href="dashboard" class="dashboard-nav">
-                    <i class="fa fa-tachometer float"></i> 
+                    <i class="fa fa-tachometer"></i> 
                     <p class="text-center">Dashboard</p>
-                    <!-- <span class="float"><i class="fa fa-chevron-right dest"></i></span> -->
                 </a>
             </li>
             <li>
                 <a href="homeSlider" class="slider-nav">
-                    <i class="fa fa-caret-square-o-right float"></i>
+                    <i class="fa fa-caret-square-o-right"></i>
                     <p class="text-center">Home Slider</p>
-                    <!-- <span class="float"><i class="fa fa-chevron-right dest"></i></span> -->
                 </a>
             </li>
             <li>
                 <a href="about" class="about-nav">
-                    <i class="fa fa-pencil float"></i>
+                    <i class="fa fa-pencil"></i>
                     <p class="text-center">About</p>
-                    <!-- <span class="float"><i class="fa fa-chevron-right dest"></i></span> -->
                 </a>
             </li>
             <li>
                 <a href="gallery" class="demo gallery-nav">
-                    <i class="fa fa-picture-o float"></i>
-                    <p class="text-center">Gallery</p>
-                    <!-- <span class="float"><i class="fa fa-chevron-right dest"></i></span> -->
+                    <i class="fa fa-picture-o"></i>
+                    <p class="text-center">Gallery</p>  
                 </a>
             </li>
             <li>
                 <a href="upload" class="upload-nav">
-                    <i class="fa fa-upload float"></i>
+                    <i class="fa fa-upload"></i>
                     <p class="text-center">Media Upload</p>
-                    <!-- <span class="float"><i class="fa fa-chevron-right dest"></i></span> -->
                 </a>
             </li>
         </ul>

@@ -39,48 +39,6 @@
                         </button>
                     </div>
                 </div>
-	            <!-- <ul class="list-inline">
-                    <li class="float select">
-                        <button class="btn btn-success">
-                            <i class="fa fa-edit"></i> Select
-                        </button>
-                    </li>
-                    <li class="float cancel hidden">
-                        <button class="btn btn-warning">
-                            <i class="fa fa-close"></i> Cancel
-                        </button>
-                    </li>
-                    <li class="float selected hidden">
-                        <button class="btn btn-default">
-                            <strong><span class="number">0</span> SELECTED</strong>
-                        </button>
-                    </li>
-	                <li><label>Category: </label></li>
-	                <li>
-	                    <select class="form-control" id="selection">
-                            <option rel="panel-all">All</option>
-	                        <option rel="panel-landscape">Landscape</option>
-	                        <option rel="panel-culture">Culture</option>
-	                        <option rel="panel-event">Event</option>
-	                        <option rel="panel-others">Others</option>
-	                    </select>
-	                </li>
-                    <li class="rfloat uploads">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#uploadModal">
-                            <i class="fa fa-upload"></i> Upload
-                        </button>
-                    </li>
-                    <li class="rfloat delete hidden">
-                        <button type="button" class="btn btn-danger" disabled="disabled">
-                            <i class="fa fa-trash"></i> Delete
-                        </button>
-                    </li>
-                     <li class="rfloat set hidden">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#setModal" disabled="disabled">
-                            <i class="fa fa-picture-o"></i> Set as Thumbnails
-                        </button>
-                    </li>
-	            </ul> -->
 	        </div>
             <div class="category well add-on hidden">
                 <div class="row">
@@ -127,6 +85,10 @@
                             <span ng-if="image.isActive == 'true' ">
                                 <h4><span class="status">Active</span></h4>
                             </span>
+                            <span class="tickbox hidden">
+                                <i class="fa fa-check fa-5x"></i>
+                                <input type="checkbox" name="option" class="hidden" checked>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -139,6 +101,10 @@
                             <img ng-src="../images/{{image.img_name}}" class="img-responsive" />
                             <span ng-if="image.isActive == 'true' ">
                                 <h4><span class="status">Active</span></h4>
+                            </span>
+                            <span class="tickbox hidden">
+                                <i class="fa fa-check fa-5x"></i>
+                                <input type="checkbox" name="option" class="hidden" checked>
                             </span>
                         </a>
                     </div>
@@ -153,6 +119,10 @@
                             <span ng-if="image.isActive == 'true' ">
                                 <h4><span class="status">Active</span></h4>
                             </span>
+                            <span class="tickbox hidden">
+                                <i class="fa fa-check fa-5x"></i>
+                                <input type="checkbox" name="option" class="hidden" checked>
+                            </span>
                         </a>
                     </div>
                 </div>
@@ -165,6 +135,10 @@
                             <img ng-src="../images/{{image.img_name}}" class="img-responsive" />
                             <span ng-if="image.isActive == 'true' ">
                                 <h4><span class="status">Active</span></h4>
+                            </span>
+                            <span class="tickbox hidden">
+                                <i class="fa fa-check fa-5x"></i>
+                                <input type="checkbox" name="option" class="hidden" checked>
                             </span>
                         </a>
                     </div>
