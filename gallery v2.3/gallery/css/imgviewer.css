@@ -1,0 +1,187 @@
+/* Styling for Image Viewer */
+#imgMod > div > div > i{
+	font-size: 20px;
+	cursor: pointer;
+}
+
+#imgMod{
+	padding: 0 !important;
+	height: 100%;
+}
+
+#imgMod .divs{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+}
+
+#imgMod .cells{
+	height: 100%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	white-space: nowrap;
+	position: absolute;
+	display: block;
+	cursor: pointer;
+}
+
+#imgMod .divs .cells .slide{
+	height: 100%;
+	width: 100%;
+	line-height: 1px;
+	text-align: center;
+	display: inline-block;
+	padding: 0;
+}
+
+#imgMod .divs .cells .slide:before {
+	content: "";
+	display: inline-block;
+	height: 50%;
+	width: 1px;
+	margin: auto;
+}
+
+#imgMod .divs .cells img{
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	height: auto;
+	vertical-align: middle;
+}
+
+#imgMod .top-bar{
+	background: rgba(0,0,0,0.7); 
+	position: fixed;
+	z-index: 1050;
+	top:0;
+	width: 100%;
+	color: rgba(255,255,255,0.7);
+	height: 40px;
+	padding: 10px 20px;
+	opacity: 0;
+	border-bottom: 1px solid rgba(255,255,255,0.3);
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .top-bar.showed{
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .top-bar button{
+	background-color: transparent;
+	padding: 0;
+	color: rgba(255,255,255,0.7);
+	border: none;
+}
+
+#imgMod .top-bar button:focus,
+#imgMod .top-bar button:active,
+#imgMod .top-bar button:hover{
+	color: rgba(255,255,255,1);
+	background-color: transparent;
+}
+
+#imgMod .left{
+	float: left;
+	letter-spacing: 3px;
+}
+
+#imgMod .right{
+	float: right;
+	margin-left: 20px;
+	padding: 0 5px;
+	border-radius: 7px;
+}
+
+#imgMod .right:hover{
+	color: #fff;
+	cursor: pointer;
+}
+
+#imgMod .arrow-left{
+	display:table;
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .arrow-left.showed{
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .arrow-right{
+	display:table;
+	position: absolute;
+	top:0;
+	right: 0;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .arrow-right.showed{
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .arrow{
+	display: table-cell;
+	vertical-align: middle;
+	color: rgba(255,255,255,0.5);
+	padding: 20px;
+}
+
+#imgMod .arrow > i{
+	font-size: 25px;
+	padding: 10px;
+	background-color: rgba(0,0,0,0.7);
+	cursor: pointer;
+}
+
+#imgMod .arrow > i:hover{
+	color: rgba(255,255,255,1);
+}
+
+#imgMod .bottom-bar{
+	position: fixed;
+	z-index: 1050;
+	left: 0;
+	bottom: 0;
+	color: rgba(255,255,255,0.7);
+	height: 40px;
+	padding: 10px 20px;
+	width: 100%;
+	text-align: center;
+	background: rgba(0,0,0,0.7);
+	opacity: 0;
+	border-top: 1px solid rgba(255,255,255,0.3);
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .bottom-bar.showed{
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+}
+
+#imgMod .bottom-bar .caption span{
+	padding: 5px;
+}
